@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Licence](https://img.shields.io/badge/licence-none-green.svg)
 [![GitHub Release](https://img.shields.io/github/release/lihengming/spring-boot-api-project-seed.svg)](https://github.com/lihengming/spring-boot-api-project-seed/releases)
 ## 简介
@@ -43,3 +44,7 @@ Spring Boot API Project Seed 是一个基于Spring Boot & MyBatis的种子项目
 
 ## License
 无，纯粹开源分享，感谢大家 [Star](https://github.com/lihengming/spring-boot-api-project-seed/stargazers) & [Fork](https://github.com/lihengming/spring-boot-api-project-seed/network/members) 的支持。
+=======
+# OneNoteApplets
+用于参加创新创业大赛编写的微信小程序(小程序名为OneNote)代码
+>>>>>>> a1183d42421340f6c0c3e71bcaa1b1fd108f2bcd
