@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.tomato.DAO.TomatoMapper">
+    <resultMap id="Tomato" type="com.company.project.tomato.DTO.Tomato">
+        <id column="t_id" jdbcType="INTEGER" property="tId" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="completed_number" jdbcType="INTEGER" property="completedNumber" />
+        <result column="due_date" jdbcType="TIMESTAMP" property="completedNumber" />
+        <result column="fail_number" jdbcType="INTEGER" property="failNumber" />
+        <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    </resultMap>
+    <resultMap id="Proportion" type="com.company.project.tomato.DTO.Proportion">
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="all_completed" jdbcType="INTEGER" property="allCompletedNumber" />
+    </resultMap>
+    <select id="selectProportion" resultMap="Proportion">
+        SELECT TITLE,SUM(completed_number) AS all_completed FROM tomato GROUP BY title;
+    </select>
+</mapper>
